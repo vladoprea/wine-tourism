@@ -12,6 +12,9 @@ p {
    font-size:1.25rem;
 }
 
+h4 {
+    margin-bottom: 0px;
+}
 
 .text-color {
     color:#fff;
@@ -30,4 +33,34 @@ p {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+/*  Background images for buttons  */
+.flag-italy {
+    background-image: url("../images/italy-flag.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.flag-france {
+    background-image: url("../images/france-flag.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.flag-spain {
+    background-image: url("../images/spain-flag.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Buttons styling */
+.btn {
+    min-height:80px;
+    min-width:120px;
+    margin-top:20px;
+    margin-bottom:20px;
 }
