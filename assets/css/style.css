@@ -3,17 +3,30 @@
 /* General text styling */
 body {
     font-family: 'Roboto', serif;
-    color: #fff;
     text-align: justify;
+    color:#000;
 }
 
 p {
    margin-bottom: 2rem;
+   font-size:1.25rem;
+}
+
+
+.text-color {
+    color:#fff;
 }
 
 /* Background images*/
 .image-grapes {
-    background: url("../images/grapes.jpg");
+    background-image: url("../images/grapes.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-vineyard {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url("../images/vineyard.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
