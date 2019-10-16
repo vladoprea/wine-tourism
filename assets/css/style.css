@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700");
+
+/* General text styling */
+body {
+    font-family: 'Roboto', serif;
+    color: #fff;
+    text-align: justify;
+}
+
+p {
+   margin-bottom: 2rem;
+}
+
+/* Background images*/
+.image-grapes {
+    background: url("../images/grapes.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
