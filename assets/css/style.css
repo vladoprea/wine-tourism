@@ -16,13 +16,20 @@ h4 {
     margin-bottom: 0px;
 }
 
-.text-color {
-    color:#fff;
+.vineyard-info {
+    margin-top: 2rem;
+}
+
+/* Removing overflow */
+
+.row {
+    padding-top:30px;
+    padding-bottom:40px;
 }
 
 /* Background images*/
 .image-grapes {
-    background-image: url("../images/grapes.jpg");
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/grapes.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -63,4 +70,9 @@ h4 {
     min-width:120px;
     margin-top:20px;
     margin-bottom:20px;
+}
+
+/* Remove float from Pie Charts divs to center them horizontally */
+#country-production, #vineyard_surface {
+    float: none;
 }
