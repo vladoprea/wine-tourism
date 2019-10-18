@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.min.css">
 
     <title>Wine tourism</title>
 </head>
@@ -44,7 +45,27 @@
           </div>
         </section>
         <!--End first section-->
-         
+        <section class="container-fluid">
+        <!--Pie chart with wine production quantity per each country in 2018-->
+        <div class="row">
+            <div class="col">
+                <h6>Wine production by country (2018, in million hectolitres)</h6>
+                <div id="country-production">
+                </div> 
+            </div>
+            <div class="col my-auto">
+                <p>
+                    *Take note that not all of this surfaces are for producing wine, some of 
+                    them are more focused on grapes for eating and juice production.
+                </p>
+            </div>
+            <div class="col">
+                <h6>Vineyard surface area by country in hectares(ha)</h6>
+                <div id="vineyard_surface"></div>
+            </div>
+        </div>
+
+        </section> 
         <!--Third section with text about wine tourism and buttons-->
         <section class="container-fluid image-vineyard">
             <div class="row">
