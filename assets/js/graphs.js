@@ -68,3 +68,9 @@ function production_by_continent(ndx) {
         .yAxisLabel("Hectoliters(hl)")
         .yAxis().ticks(6);
 }
+
+// Function for refreshing charts 
+
+function refreshPage() {
+    window.location.reload();
+}
