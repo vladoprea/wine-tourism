@@ -20,13 +20,25 @@ h4 {
     margin-top: 2rem;
 }
 
-/* Removing overflow */
+/* Rows and cols styiling overflow */
 
-.row {
+.row-style {
     padding-top:30px;
-    padding-bottom:40px;
+    padding-bottom:20px;
 }
 
+.row-piechart {
+    padding-top: 30px;
+}
+
+.col-style {
+    margin-bottom: 20px;
+}
+/* Barchart sizing to fit in all screen */
+#continent-production {
+    height:100%;
+    width:100%;
+}
 /* Background images*/
 .image-grapes {
     background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/grapes.jpg");

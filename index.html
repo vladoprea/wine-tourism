@@ -17,8 +17,8 @@
     <!--Main section-->
     <main>
         <!--First section with background image with quote and site presentation-->
-      <section class="container-fluid image-grapes">
-          <div class="row ">
+        <section class="container-fluid image-grapes">
+          <div class="row row-style">
                 <div class="col text-center">
                      <h1><em>“Wine is the only artwork you can drink”</em></h1>
                 </div>
@@ -28,7 +28,7 @@
                     <p><strong>Luis Fernando Oliverri</strong></p>
                 </div>
           </div>
-          <div class="row">
+          <div class="row row-style">
               <div class="col">
                   <p>Wine is many things to many people. It’s a passion, career, hobby, beverage, meal accompaniment,
                      investment or simply a fun way to take away from the drudgeries of everyday life. 
@@ -45,42 +45,58 @@
           </div>
         </section>
         <!--End first section-->
+
+        <!--Second section with statistic dashboard-->
         <section class="container-fluid">
         <!--Pie chart with wine production quantity per each country in 2018-->
-        <div class="row">
-            <div class="col-lg-4 text-center">
-                <h6>Wine production by country (2018, in million hectolitres)</h6>
+          <div class="row  row-piechart">
+            <div class="col-md-6 text-center col-style">
+                   <h6>Wine production by country (2018, in million hectolitres)</h6>
                 <div id="country-production">
+
                 </div> 
             </div>
-            <div class="col-lg-4 my-auto text-center">
+         <!--Pie chart with vineyard surfaces per each country in 2018-->   
+            <div class="col-md-6 text-center">
+                <h6>Vineyard surface area by country in hectares(ha)*</h6>
+                <div id="vineyard_surface">
+
+                </div>
+            </div>
+          </div>
+           <div class="row">
+            <div class="col my-auto text-center">
                 <p class="vineyard-info">
-                   <em> *Take note that not all of this surfaces are for producing wine, some of 
-                    them are more focused on grapes for eating and juice production.</em>
+                <em> *Take note that not all of this surfaces are for producing wine, some of 
+                them are more focused on grapes for eating and juice production.</em>
                 </p>
             </div>
-            <div class="col-lg-4 text-center">
-                <h6>Vineyard surface area by country in hectares(ha)*</h6>
-                <div id="vineyard_surface"></div>
+        </div>
+        <!--Bar chart with wine production per continent in 2018-->
+        <div class="row">
+            <div class="col">
+                <h6>Wine production per continent in 2018</h6>
             </div>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col text-center">
                 <div id="continent-production">
                     
                 </div>
+            <div class="col">
+
             </div>
         </div>
-
-        </section> 
+      </section> 
+        <!--End second section-->
         <!--Third section with text about wine tourism and buttons-->
         <section class="container-fluid image-vineyard">
-            <div class="row">
+            <div class="row row-style">
                 <div class="col text-center">
                     <h2>Wine Tourism</h2>
                 </div>
             </div>
-            <div class="row">
+            <div class="row row-style">
                 <div class="col">
                     <p><strong>Wine tourism, enotourism or vinitourism</strong>
                         is a relatively new form of tourism which 

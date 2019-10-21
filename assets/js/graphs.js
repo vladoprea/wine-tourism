@@ -52,16 +52,19 @@ function vineyard_surface_by_country(ndx) {
 function production_by_continent(ndx) {
     var continent_dim = ndx.dimension(dc.pluck('Continent'));
     var continent_prod = continent_dim.group().reduceSum(function(d) {return d.Wine;});
-
-
+ 
+ 
     dc.barChart('#continent-production')
-        .width(600)
+        .width(550)
         .height(200)
-        .margins({top: 10, right: 50, bottom: 30, left: 50})
+        .useViewBoxResizing(true)
+        .margins({top: 10, right: 50, bottom: 40, left: 40})
         .dimension(continent_dim)
         .group(continent_prod)
         .transitionDuration(500)
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
+        .xAxisLabel("Continent")
+        .yAxisLabel("Hectoliters(hl)")
         .yAxis().ticks(6);
 }
