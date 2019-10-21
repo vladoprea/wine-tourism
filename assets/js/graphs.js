@@ -11,6 +11,8 @@ function makeGraphs(error, wineProduction) {
 
     vineyard_surface_by_country(ndx);
 
+    production_by_continent(ndx);
+
     dc.renderAll();
 }
 
@@ -45,3 +47,21 @@ function vineyard_surface_by_country(ndx) {
         .group(vineyard_area);
 }
 
+//Bar chart for wine production per each continent in 2018
+
+function production_by_continent(ndx) {
+    var continent_dim = ndx.dimension(dc.pluck('Continent'));
+    var continent_prod = continent_dim.group().reduceSum(function(d) {return d.Wine;});
+
+
+    dc.barChart('#continent-production')
+        .width(600)
+        .height(200)
+        .margins({top: 10, right: 50, bottom: 30, left: 50})
+        .dimension(continent_dim)
+        .group(continent_prod)
+        .transitionDuration(500)
+        .x(d3.scale.ordinal())
+        .xUnits(dc.units.ordinal)
+        .yAxis().ticks(6);
+}
