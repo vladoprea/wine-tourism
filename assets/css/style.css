@@ -22,6 +22,11 @@ h4 {
 
 /* Rows and cols styling */
 
+.row, .container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
 .row-style {
     padding-top:30px;
     padding-bottom:20px;
@@ -33,6 +38,18 @@ h4 {
 
 .col-style {
     margin-bottom: 20px;
+}
+
+.col-map {
+    padding: 0;
+}
+
+.row-map {
+    margin-top: 100px;
+}
+
+.row-buttons {
+    padding-bottom: 40px;
 }
 /* Barchart sizing to fit in all screen */
 #continent-production {
@@ -87,4 +104,11 @@ h4 {
 /* Remove float from Pie Charts divs to center them horizontally */
 #country-production, #vineyard_surface {
     float: none;
+}
+
+/*   Map styling   */
+#map {
+    width: 100%;
+    height: 30rem;
+    margin: auto;
 }
