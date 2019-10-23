@@ -119,3 +119,15 @@ h4 {
     height: 30rem;
     margin: auto;
 }
+
+/* Media responsivness */
+@media (max-width: 577px) {
+    .container {
+        margin: 0;
+        padding: 0;
+    }
+    .col {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
