@@ -3,7 +3,7 @@
 function initMap() {
     var center = {lat: 41.8719, lng: 12.5674};
 
-   //Markers position and text for infowindows
+   //Define a variable for markers position and text for infowindows
    
    var locations = [
       ['<a href="https://www.marchesibarolo.com/" target="_blank"><h6>Marchesi di Barolo</h6></a><br>\
@@ -68,6 +68,33 @@ function initMap() {
       Founded in 1924 by Ramón Bilbao, and chosen as one of the best wineries of Spain at the International Wine & Spirit Competition, the company, located in Haro, has focused on innovation without forgetting their traditional roots and respecting the culture and history of wine.', 42.5699478, -2.8630381]
     ];
 
+    // Display a map on the page
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 6,
+        center: center 
+    });
+
+    // Display multiple markers on a map
+    var infowindow = new google.maps.InfoWindow({maxWidth: 250});
+    
+    var marker, i;
+
+    // Loop through the array of markers & place each one on the map
+    for (i = 0; i < locations.length; i++) {
+        marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+            map: map,
+            title: locations[i][0]
+        });
+
+    // Allow each marker to have an info window
+    google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function () {
+            infowindow.setContent(locations[i][0]);
+            infowindow.open(map, marker);
+        }
+    }) (marker, i));
+  }
 }
 
 
