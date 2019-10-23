@@ -2,7 +2,7 @@
 
 /* General text styling */
 body {
-    font-family:'Merienda', cursive;
+    font-family:'Merienda', 'sans serif', cursive;
     text-align: justify;
     color:#000;
 }
@@ -18,6 +18,13 @@ h4 {
 
 .vineyard-info {
     margin-top: 2rem;
+}
+
+.p-footer {
+    margin-top: 50px;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-family: sans-serif;
 }
 
 /* Rows and cols styling */
