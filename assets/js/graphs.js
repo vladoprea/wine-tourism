@@ -53,7 +53,6 @@ function production_by_continent(ndx) {
     var continent_dim = ndx.dimension(dc.pluck('Continent'));
     var continent_prod = continent_dim.group().reduceSum(function(d) {return d.Wine;});
  
- 
     dc.barChart('#continent-production')
         .width(550)
         .height(200)

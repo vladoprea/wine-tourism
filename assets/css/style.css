@@ -77,10 +77,11 @@ h4 {
 
 /*  Background images for buttons  */
 .flag-italy {
-    background-image: url("../images/italy-flag.jpg");
+    background-image:url("../images/italy-flag.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    opacity: 0.8;
 }
 
 .flag-france {
@@ -88,6 +89,7 @@ h4 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    opacity: 0.8;
 }
 
 .flag-spain {
@@ -95,16 +97,25 @@ h4 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    opacity: 0.8;
 }
 
-/* Buttons styling */
+/* Buttons for countries styling */
 .btn-flags {
     min-height:80px;
     min-width:120px;
     margin-top:20px;
     margin-bottom:20px;
 }
-
+/* Hover for buttons for countries */
+.btn-flags:hover, .btn-flags:active {
+   min-width: 135px;
+   opacity:1;
+}
+.btn-flags {
+    transition: opacity 1s ease-in-out, min-width 1s ease-in-out;
+    
+}
 /* Remove float from Pie Charts divs to center them horizontally */
 #country-production, #vineyard_surface {
     float: none;

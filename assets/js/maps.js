@@ -1,7 +1,7 @@
 // Initialize map function
 
-function initMap() {
-    var center = {lat: 41.8719, lng: 12.5674};
+function initMap() {  
+    var center = {lat: 41.29246, lng: 12.5736108};
 
    //Define a variable for markers position and text for infowindows
    
@@ -72,6 +72,22 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 6,
         center: center 
+    });
+
+    //Move center of the map when clicking on countries buttons
+    google.maps.event.addDomListener(document.getElementById('centerItaly'), 'click', function () {
+
+        map.setCenter(new google.maps.LatLng(41.29246, 12.5736108));
+    });
+
+    google.maps.event.addDomListener(document.getElementById('centerFrance'), 'click', function () {
+
+        map.setCenter(new google.maps.LatLng(46.71109, 1.7191036));
+    });
+
+    google.maps.event.addDomListener(document.getElementById('centerSpain'), 'click', function () {
+
+        map.setCenter(new google.maps.LatLng(40.2085, -3.713));
     });
 
     // Display multiple markers on a map
