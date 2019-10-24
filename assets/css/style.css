@@ -35,7 +35,7 @@ h4 {
 }
 
 .row-style {
-    padding-top:30px;
+    padding-top:20px;
     padding-bottom:20px;
 }
 
@@ -51,9 +51,6 @@ h4 {
     padding: 0;
 }
 
-.row-map {
-    margin-top: 100px;
-}
 
 .row-buttons {
     padding-bottom: 40px;
@@ -120,7 +117,7 @@ h4 {
     margin: auto;
 }
 
-/* Media responsivness */
+/* Media responsivness for texts*/
 @media (max-width: 577px) {
     .container {
         margin: 0;
@@ -130,4 +127,16 @@ h4 {
         padding-left: 10px;
         padding-right: 10px;
     }
+}
+
+/* Search box styling */
+.search-map {
+    background-color: #f2f2f2;
+    width: 70%;
+    font-family: sans-serif;
+    text-align: center;
+    border: 0.5px solid;
+    border-style: inset;
+    border-radius: 10px;
+    min-height: 35px;
 }
