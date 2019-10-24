@@ -3,7 +3,7 @@
 Wine tourism or enotourism was a blooming industry in 2018 and its popularity is still rising. Wine tourism includes the tasting, consumption or purchasing of wine  at or near the source. It can consist of visits to wineries, vineyards and restaurants known to offer unique experiences, as well as organized wine tours, wine festivals or other special events.
 This single page site is designed to show statistics about the wine production by country and continent in 2018 and more important, to present an interactive map with 30 of the most beatiful vineyards and wineries to visit from 3 countries: Italy, France and Spain.
 
-The deployed site can be found here :<https://vladoprea.github.io/wine-tourism/>
+The deployed site can be found here: <https://vladoprea.github.io/wine-tourism/>
 
 ## User Experience
 
@@ -59,3 +59,7 @@ A google map search box connected with the google map that offers the opportunit
 A google map centered above Italy. It contains 30 markers, 10 for each of the 3 countries that produces most wine. When clicked, each marker opens a window with the title of the vineyard and a short presentation text. The title is also a link to the site of the respective destination.
 
 ## Technologies used
+
+In this project I used:
+
++ [HTML](https://www.w3schools.com/html/)
