@@ -140,15 +140,19 @@
         </section>
         <!--End Third section-->
 
-        <!--Map section-->
-        <div class="section container-fluid">
-            <div class="row row-map">
+        <!--Google Search Box-->
+        <div class="row">
+            <div class="col">
+                <input id="search" class="controls" type="text" placeholder="Search location">
+            </div>
+        </div>
+        <!--Google Map section-->
+        <div class="row row-map">
                 <div class="col col-map">
                     <div id="map">
                     </div>
                 </div>
             </div>
-        </div>
         <!--End Map Section-->
     </main>
     <!--End Main Section-->
@@ -172,7 +176,7 @@
 
     <script text="type/javascript" src="assets/js/maps.js"></script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDosi_HU3KXDBfTX8ZtVOytR46FfKznYuc&callback=initMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDosi_HU3KXDBfTX8ZtVOytR46FfKznYuc&callback=initMap&libraries=places"></script>
     
 
     
