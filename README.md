@@ -77,3 +77,55 @@ In this project I used:
 Other technologies used:
 
 + [AdobeXD](https://www.adobe.com/ro/products/xd.html) for creating Mock-Ups
+
+## Testing
+
+This project was only tested manually on a range of devices and browsers. During development I constantly used Chrome Developer Tools in order to ensure responsivness on all devices. The site functionality was contantly checked in the following browsers:
+
++ Chrome
++ Mozzila Firefox
++ Opera
++ Safari
++ Internet Explorer 11
++ Mi Browser
+
+For some users, the responsivness of Pie Charts in small devices can create a bad experience because of lacking a full view of the charts interconnectivity.
+
+Because of the technologies used, an automatic testing with Jasmine was not necessary.
+
+### Manual testing
+
+Manual testing was made on several small, medium and large devices and constantly during development with Chrome Developer Tools.
+
+Charts
+
+1. Desktop users: The tests were made trying the interactivity of the charts by clicking on each of the slices of the pie charts or each bar of the bar chart. As example, when user clicks on the slice of the pie of Italy, the other pie chart shows the data only for Italy and the barchart shows only de data for Europe keeping just the quantity produced by Italy. Also, when hovered, the charts open small windows with the necessary information.
+
+2. Mobile and tablet users: The tests were made trying the interactivity of the charts by clicking on each of the slices of the pie charts or each bar of the bar chart. As example, when user clicks on the slice of the pie of Italy, the other pie chart shows the data only for Italy and the barchart shows only de data for Europe keeping just the quantity produced by Italy. The disadvantage for these devices is that the small windows with informations are not displayed when hovering.
+
+Refresh Charts button
+
+Refresh charts button worked in all tests, refreshing the entire page as designed.
+
+Country flags buttons
+
+Country flags buttons worked in all tests by centering the map above the country selected. After using the search box for other destinations across the globe, when pressing the flags buttons, the map is centered as programmed.
+
+Search box
+
+Search box was tested by entering different destinations across the world. The autocomplete functions works and a marker is displayed for the desired destination.
+
+Google map
+
+Google maps is displayed well on all devices and browser tested. All the markers are on the desired destination. Markers were tested by clicking on each of them, an info window appeared for all of them containing the correct informations. Titles of the destinations that contain links to their website, open the websites on a different tab. All of them worked correctly.
+
+### Validators
+
+The code was checked with the following validators:
+
++ [W3CMarkupValidator](https://validator.w3.org/) for HTML code - errors found were fixed
++ [W3CJigsawCSSValidator](https://jigsaw.w3.org/css-validator/) for CSS code - no errors found
++ [JShint](https://jshint.com/) for JS code. Errors found:
+
+1. Multiple errors in maps.js file for var = locations saying: "Bad escaping of EOL. Use option multistr if needed."
+2. One error at line 107 in maps.js file saying: "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (infowindow, locations, map)"
