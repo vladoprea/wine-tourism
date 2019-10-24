@@ -63,3 +63,17 @@ A google map centered above Italy. It contains 30 markers, 10 for each of the 3 
 In this project I used:
 
 + [HTML](https://www.w3schools.com/html/)
++ [CSS](https://www.w3schools.com/css/)
++ [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
++ [BootstrapCDN](https://getbootstrap.com/)
++ [GoogleFonts](https://fonts.google.com/)
++ [Git](https://git-scm.com/)
++ [Crossfilter](https://github.com/crossfilter)
++ [D3.js](https://d3js.org/)
++ [DC.js](https://dc-js.github.io/dc.js/)
++ [GoogleMapsAPI](https://developers.google.com/maps/documentation/javascript/tutorial)
++ [VScode](https://code.visualstudio.com/)
+
+Other technologies used:
+
++ [AdobeXD](https://www.adobe.com/ro/products/xd.html) for creating Mock-Ups
