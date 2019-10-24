@@ -117,7 +117,7 @@ Search box was tested by entering different destinations across the world. The a
 
 Google map
 
-Google maps is displayed well on all devices and browser tested. All the markers are on the desired destination. Markers were tested by clicking on each of them, an info window appeared for all of them containing the correct informations. Titles of the destinations that contain links to their website, open the websites on a different tab. All of them worked correctly.
+Google map is displayed well on all devices and browser tested. All the markers are on the desired destination. Markers were tested by clicking on each of them, an info window appeared for all of them containing the correct informations. Titles of the destinations that contain links to their website, open the websites on a different tab. All of them worked correctly.
 
 ### Validators
 
@@ -129,3 +129,58 @@ The code was checked with the following validators:
 
 1. Multiple errors in maps.js file for var = locations saying: "Bad escaping of EOL. Use option multistr if needed."
 2. One error at line 107 in maps.js file saying: "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (infowindow, locations, map)"
+
+## Deployment
+
+This site was developed using VScode, committed to git and pushed to GitHub with the built-in functionality in VScode. From there it was deployed to GitHub Pages from its GitHub repository.
+
+### To deploy this page to GitHub Pages from its GitHub repository the following steps were taken
+
+1. Logged into my GitHub account <https://github.com/vladoprea>
+2. Go to Repository tab.
+3. Click the repository called "wine-tourism".
+4. Go to the "Settings" tab at the top of the page and click it.
+5. Scroll down the "Settings" page to the "Github Pages" section.
+6. In the "Sources" subsection select "Master Branch" from the drop-down menu currently labelled none. This refreshes the page and publishes the project.
+7. Scroll down again to the GitHub pages to find a link to the deployed site.
+8. The website is published here: <https://vladoprea.github.io/wine-tourism/>
+
+### To run project locally
+
+To clone this project from GitHub:
+
+1. Follow this link to the Project GitHub repository.
+2. Under the repository name, click "Clone or download".
+3. In the Clone with HTPPs section, copy the clone URL for the repository.
+4. In your local IDE open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type git clone and then paste the URL you copied in Step 3.
+7. git clone:  <https://vladoprea.github.io/wine-tourism/>
+8. Press Enter. Your local clone will be created.
+
+## Credits
+
+### Media
+
++ Background top picture: <https://www.rockwood-manor.com/vineyards/>
++ Background bottom picture: <https://wentevineyards.com/wines/gifts>
++ Flags for buttons images: <http://www.all-flags-world.com>
++ Text in first section: <https://www.thewinecellarinsider.com/wine-topics/wine-education-articles/learn-wine-guide-understanding-wine/>
++ Text in third section: <https://en.wikipedia.org/wiki/Enotourism>
++ Destinations in Italy and info text about them: <https://theculturetrip.com/europe/italy/articles/the-10-best-wineries-in-italy/>
++ Destinations in France and info text about them: <https://www.completefrance.com/travel/holiday-ideas/10-outstanding-vineyards-in-france-you-have-to-visit-1-4430426>
++ Destinations in Spain and info text about them: <https://theculturetrip.com/europe/spain/articles/the-best-wineries-and-vineyards-to-visit-in-spain/> and <https://www.winerist.com/magazine/wine/the-10-most-famous-spanish-wineries-to-visit>
+
+### Acknowledgements
+
++ MrUpsidown users answer in StackOverflow for Centering a Map by clicking a button: <https://stackoverflow.com/questions/28499141/how-to-change-google-map-center-by-clicking-a-button>
++ Michelle user of medium site for creating markers and infowindows on google map: <https://medium.com/@limichelle21/integrating-google-maps-api-for-multiple-locations-a4329517977a>
++ For creating a search box and link it to the google map: <https://developers-dot-devsite-v2-prod.appspot.com/maps/documentation/javascript/examples/places-searchbox>
++ [CodeInstitute](https://codeinstitute.net/)
++ [StackOverflow](https://stackoverflow.com/)
++ [GoogleMapsPlatform](https://developers.google.com/maps/documentation/javascript/places)
+
+Special thanks to:
+
++ Maranatha Ilesanmi my mentor who guide me through this project and provided punctual, solid and useful feedback.
++ [Slack](https://app.slack.com/client/T0L30B202/C0L316Z96) community for providing solutions to every question I had.
