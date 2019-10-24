@@ -127,13 +127,13 @@
             <!--Buttons with countries flags background connected to maps-->
             <div class="row row-buttons">
                 <div class="col-sm-4 text-center">
-                    <button class="btn btn-flags flag-italy"><h4><strong>Italy</strong></h4></button>
+                    <button id="centerItaly" class="btn btn-flags flag-italy" active><h4><strong>Italy</strong></h4></button>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <button class="btn btn-flags flag-france"><h4><strong>France</strong></h4></button>
+                    <button id="centerFrance" class="btn btn-flags flag-france" active><h4><strong>France</strong></h4></button>
                 </div>
                 <div class="col-sm-4 text-center">
-                   <button class="btn btn-flags flag-spain"><h4><strong>Spain</strong></h4></button>
+                   <button id="centerSpain" class="btn btn-flags flag-spain" active><h4><strong>Spain</strong></h4></button>
                 </div>
             </div>
           </div>
@@ -141,13 +141,13 @@
         <!--End Third section-->
 
         <!--Google Search Box-->
-        <div class="row">
-            <div class="col">
-                <input id="search" class="controls" type="text" placeholder="Search location">
+        <div class="row row-style">
+            <div class="col text-center">
+                <input id="search" class="search-map" type="text" placeholder="Search for another destination">
             </div>
         </div>
         <!--Google Map section-->
-        <div class="row row-map">
+        <div class="row">
                 <div class="col col-map">
                     <div id="map">
                     </div>
