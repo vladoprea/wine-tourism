@@ -1,6 +1,6 @@
 // Initialize map function
 
-function initMap() {  
+function initMap(){  
     var center = {lat: 41.29246, lng: 12.5736108};
 
    //Define a variable for markers position and text for infowindows
