@@ -113,7 +113,7 @@ h4 {
    opacity:1;
 }
 .btn-flags {
-    transition: opacity 1s ease-in-out, min-width 1s ease-in-out;
+    transition: opacity 0.5s ease-in-out, min-width 0.5s ease-in-out;
     
 }
 /* Remove float from Pie Charts divs to center them horizontally */
