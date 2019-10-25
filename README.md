@@ -30,7 +30,13 @@ This is a single page site, easy to navigate. It begins with an bohemian introdu
 + As a vineyard owner I want to have access to statistical data about wine, vineyards and wineries and also to be able to see and access informations about other vineyards that compete with mine.
 + As a wine lover I want to have complex data that I can access in order to expand my knowledge.
 
-### Wireframes
+### Mock-ups
+
+As it can be seen, the project was modified and improved during development process:
+
++ [Desktop-MockUp](https://ibb.co/C6kpk1d)
++ [Ipad-MockUp](https://ibb.co/r3n3Hr6)
++ [Mobile-MockUp](https://ibb.co/Hqmz740)
 
 ## Features
 
