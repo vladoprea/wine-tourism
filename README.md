@@ -131,10 +131,15 @@ The code was checked with the following validators:
 
 + [W3CMarkupValidator](https://validator.w3.org/) for HTML code - errors found were fixed
 + [W3CJigsawCSSValidator](https://jigsaw.w3.org/css-validator/) for CSS code - no errors found
-+ [JShint](https://jshint.com/) for JS code. Errors found:
++ [JShint](https://jshint.com/) for JS code.
+
+### Errors found
 
 1. Multiple errors in maps.js file for var = locations saying: "Bad escaping of EOL. Use option multistr if needed."
+
 2. One error at line 107 in maps.js file saying: "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (infowindow, locations, map)"
+
+3. Bar chart sum error. Bar chart should display the quantity of wine produced per each continent. For Europe continent the result should have 1 decimal, but it has a lot more. Probably the error is here : "var continent_prod = continent_dim.group().reduceSum(function(d) {return d.Wine;});" line 54 in graphs.js function production_by_continent. I didn't found a solution for this release.
 
 ## Deployment
 
